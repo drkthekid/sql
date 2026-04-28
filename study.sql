@@ -3,8 +3,8 @@ CREATE DATABASE study_sql;
 
 USE study_sql;
 
-## DDL DATA DEFINITION LANGUAGE-> comandos de definição como CREATE DATABASE E CREATE TABLE
-## DML DATA MANIPULATION LANGUAGE-> comandos de manipulação de dados como INSERT INTO
+## DDL DATA DEFINITION LANGUAGE-> comandos de definição como CREATE DATABASE CREATE TABLE, ALTER TABLE E DROP TABLE 
+## DML DATA MANIPULATION LANGUAGE-> comandos de manipulação de dados como INSERT INTO, UPDATE, DELETE AND TRUNCATE
 
 
 CREATE TABLE users (
@@ -57,9 +57,13 @@ CREATE TABLE cursos (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(200) NOT NULL UNIQUE,
 	description TEXT NULL,
-	duration INT NOT NULL UNSIGNED,
+	duration INT UNSIGNED,
 	totalClass INT NOT NULL,
-	ano YEAR DEFAULT '2026',
+	ano YEAR DEFAULT '2026'
 );
 
+desc cursos;
 
+DROP TABLE cursos;
+
+## continua em manipulando linhas.sql . . . 
